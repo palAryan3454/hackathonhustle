@@ -36,11 +36,7 @@ const generatePDF = async(name) => {
     const GreatVibes = await pdfDoc.embedFont(fontBytes);
     const pages = pdfDoc.getPages();
     const firstPage = pages[0];
-
-    // Calculate text width
     const textWidth = GreatVibes.widthOfTextAtSize(name, 58);
-
-    // Calculate center position
     const pageWidth = firstPage.getSize().width;
     const centerX = (pageWidth - textWidth) / 2;
 
@@ -54,7 +50,7 @@ const generatePDF = async(name) => {
 
     const pdfBytes = await pdfDoc.save();
     console.log("Done creating");
-    var file = new File([pdfBytes], "codev_certificate.pdf", {
+    var file = new File([pdfBytes], "Certificate_for_Hackathon_Hustle.pdf", {
         type: "application/pdf;charset=utf-8",
     });
     saveAs(file);
