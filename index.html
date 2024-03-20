@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Certificate for CODEV CLUB</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./codevlogo.jpeg" alt="Codev Club Logo">
+        <h4>Get your certificate also follow to 👉👉👉👉👉👉 <br></h4>
+        <a href="https://www.linkedin.com/company/co-dev-club/">Codev Club Gehu</a>
+    </header>
+    <main>
+        <marquee>
+            <img src="./gehu.jpg" alt="Codev Club Logo">
+            <img src="./codevlogo.jpeg" alt="Codev Club Logo">
+        </marquee>
+        <br>
+        <label for="name">Type Your Name</label>
+        <input required type="text" name="Name" autocomplete="name" placeholder="Enter your name" id="name" minlength="3" maxlength="16">
+        <Button id="submitBtn">Get Certificate</Button>
+        <br>
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./my.js"></script>
+</body>
+
+</html>
