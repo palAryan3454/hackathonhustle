@@ -12,7 +12,7 @@ submitBtn.addEventListener("click", async () => {
     const val = capitalize(userName.value);
     const isNamePresent = await checkNamePresence(val);
     if (isNamePresent) {
-        if (val.trim() !== "" && val.length <= 20 && userName.checkValidity()) {
+        if (val.trim() !== "" && val.length <= 40 && userName.checkValidity()) {
             generatePDF(val);
         } else {
             userName.reportValidity();
